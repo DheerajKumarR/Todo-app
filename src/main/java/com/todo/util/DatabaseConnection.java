@@ -7,7 +7,7 @@ import java.sql.SQLException;
 public class DatabaseConnection {
     
     // ✅ USE YOUR RAILWAY DB DETAILS HERE
-    private static final String URL = "jdbc:mysql://trolley.proxy.rlwy.net:25517/railway?sslMode=REQUIRED";
+	private static final String URL = "jdbc:mysql://trolley.proxy.rlwy.net:25517/railway?sslMode=REQUIRED&allowPublicKeyRetrieval=true&autoReconnect=true";
     private static final String USERNAME = "root";  
     private static final String PASSWORD = "nplcJQmUcBCTeTKreoJruvOOAhoPaHQd"; 
     private static final String DRIVER = "com.mysql.cj.jdbc.Driver";
