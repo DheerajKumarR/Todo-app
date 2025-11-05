@@ -6,14 +6,12 @@ import java.sql.SQLException;
 
 public class DatabaseConnection {
     
-    private static final String URL = "jdbc:mysql://localhost:3306/todo_app?useSSL=false&serverTimezone=UTC";
-    private static final String USERNAME = "root";  // Change to your MySQL username
-    private static final String PASSWORD = "dheeraj";  // Change to your MySQL password
+    // ✅ USE YOUR RAILWAY DB DETAILS HERE
+    private static final String URL = "jdbc:mysql://trolley.proxy.rlwy.net:25517/railway?sslMode=REQUIRED";
+    private static final String USERNAME = "root";  
+    private static final String PASSWORD = "nplcJQmUcBCTeTKreoJruvOOAhoPaHQd"; 
     private static final String DRIVER = "com.mysql.cj.jdbc.Driver";
     
-    /**
-     * Get database connection
-     */
     public static Connection getConnection() throws SQLException {
         Connection connection = null;
         try {
@@ -26,10 +24,7 @@ public class DatabaseConnection {
         }
         return connection;
     }
-    
-    /**
-     * Close database connection
-     */
+
     public static void closeConnection(Connection connection) {
         if (connection != null) {
             try {
