@@ -171,6 +171,6 @@ For educational demonstration of Java-JDBC CRUD operations.
 ***
 
 
-Let me know if you want a version with markdown badges, screenshots, or sample data!
+
 
 [1](https://github.com/DheerajKumarR/ToDo-app)
